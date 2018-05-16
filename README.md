@@ -25,3 +25,8 @@ Then the resulting output will be:
 font pango:Menlo 12
 set $workspace1 1:Browser
 ```
+
+ ## Installation
+
+`go get github.com/coljac/i3-make-config`
+
