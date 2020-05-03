@@ -79,7 +79,9 @@ func main() {
 			strings.HasPrefix(line, "#LET") {
 			continue
 		}
-		if strings.Contains(line, "@") {
+		if strings.Contains(line, "@@") {
+            line = strings.Replace(line, "@@", "@", 1)
+        } else if strings.Contains(line, "@") {
 			tokens := strings.Split(line, "@")
 			for _, t := range tokens[1:] {
 				token := ""
